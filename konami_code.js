@@ -8,10 +8,12 @@ document.addEventListener('keydown', function(e) {
   if (oneKey === code[index]) {
     index++;
     
-    if (index === alphabet.length) {
+    if (index === code.length) {
       alert("Congratulations, you've unlocked the Konami Code!");
+      index = 0;
     }
-    
+  } else {
+    index = 0;
   }
 }) //end parenthases for function(e).
 }
